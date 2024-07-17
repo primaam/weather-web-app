@@ -5,7 +5,7 @@ const Loader = () => {
     return (
         <div className={styles.layout}>
             <div className={styles.loader}></div>
-            <p>Please wait, data will shows up soon</p>
+            <h1 className={styles.title}>Please wait, data will shows up soon</h1>
         </div>
     );
 };

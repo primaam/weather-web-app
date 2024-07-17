@@ -1,11 +1,20 @@
 import "./App.css";
-import { Loader, Layout } from "./component";
+import { Loader, Layout, Header } from "./component";
 
 function App() {
     return (
-        <Layout>
-            <Loader />
-        </Layout>
+        <>
+            <Layout>
+                <Header />
+                <Loader />
+            </Layout>
+            <Layout>
+                <Loader />
+            </Layout>
+            <Layout>
+                <Loader />
+            </Layout>
+        </>
     );
 }
 

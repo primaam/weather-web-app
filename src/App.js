@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Loader, Layout, Header, WeatherList } from "./component";
 import axios from "axios";
 
 function App() {
-    const [isLoading, setIsLoading] = React.useState(false);
-    const [data, setData] = React.useState(null);
+    const [isLoading, setIsLoading] = useState(false);
+    const [data, setData] = useState(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         const getWeatherData = async () => {
             const key = process.env.REACT_APP_API_KEY;
             return await axios({

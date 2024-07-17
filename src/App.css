@@ -3,6 +3,8 @@
   --primary-color: #0D1B2A;
   --secondary-color: #778DA9;
   --white-color: #EEEEEE;
+
+  background-color: var(--background-color);
 }
 
 /* .App {
